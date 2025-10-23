@@ -71,8 +71,11 @@ Assigned each customer to a segment.
 Calculated averages per cluster:
 
 Metric	Meaning	Desired Trend
+
 Recency	Days since last purchase	Lower is better
+
 Frequency	Number of orders	Higher is better
+
 Monetary	Total spend: Higher is better
 
 
@@ -108,19 +111,7 @@ Matplotlib, Seaborn — visualisation
 
 Scikit-learn — scaling, clustering, evaluation
 
-Streamlit (optional) — app deployment
 
-💡 Deployment (Optional)
-
-A lightweight Streamlit app allows users to upload a retail CSV and automatically generate:
-
-RFM table
-
-Suggested k value (via Elbow/Silhouette)
-
-Cluster assignments
-
-Downloadable segment summary
 
 
 🏁 Results & Impact
@@ -136,7 +127,7 @@ Demonstrates applied mastery of data cleaning, feature engineering, clustering, 
 Simeon Musa Nyakeh Vibbi
 AI Saturdays Lagos — Machine Learning Flipped Cohort
 📧 svibbinyakeh@gmail.com
-🔗 [[Your LinkedIn ](https://www.linkedin.com/in/simeon-nyakeh-vibbi-a7992b178/)/ [GitHub Profile]](https://github.com/SNVibbi)
+🔗 [[Your LinkedIn ](https://www.linkedin.com/in/simeon-nyakeh-vibbi-a7992b178/)/ [GitHub Profile](https://github.com/SNVibbi)
 
 🧾 Acknowledgment
 
