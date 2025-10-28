@@ -128,7 +128,7 @@ The dataset contains information for all customers segmented into five key perso
 ### 📊 Visual Insights
 
 #### 1️⃣ Customer Distribution by Persona
-A clear dominance of *Champions* and *Loyal* customers was observed, indicating a strong, engaged customer base.
+The customer base is led by the *At Risk* (30.7%) and *Promising* (29.7%) segments, with *Champions* (19.3%) and* Loyal* (20.3%) forming smaller but higher-value groups;* Hibernating* accounts for 0%.
 
 | Persona | % of Customers |
 |----------|----------------|
@@ -136,20 +136,20 @@ A clear dominance of *Champions* and *Loyal* customers was observed, indicating 
 | Loyal | 20.0% |
 | Promising | 29.5% |
 | At Risk | 30.7% |
-| Hibernating | 0.5% |
+| Hibernating | 0.0% |
 
 
 
 #### 2️⃣ Average RFM Metrics by Persona
-| Persona | Avg Recency (Days) | Avg Frequency | Avg Monetary (₦) |
+| Persona | Avg Recency (Days) | Avg Frequency | Avg Monetary ($) |
 |----------|--------------------|----------------|-------------------|
-| Champions | 85 | 3.8 | 2450 |
-| Loyal | 110 | 2.9 | 1580 |
-| Promising | 150 | 2.2 | 960 |
-| At Risk | 260 | 1.5 | 720 |
-| Hibernating | 340 | 1.0 | 380 |
+| Champions | 86.25 | 1.0| 997.41 |
+| Loyal | 271.26 | 1.0 | 1036.45 |
+| Promising | 91.72 | 1.0 | 89.18 |
+| At Risk | 273.71 | 1.0 | 86.69|
+| Hibernating | NaN | NaN | NaN |
 
-> Champions and Loyal customers have the lowest average recency (most recent activity) and the highest monetary value — confirming their importance to retention strategies.
+> Champions are the most recent and high-spending; Loyal also spend highly but are much less recent; Promising are recent but low-spend; At Risk are the least recent and low-spend; Hibernating has no members.
 
 ---
 
@@ -166,11 +166,14 @@ The following plots were generated using **Seaborn** and **Matplotlib**:
 ---
 
 ### 💡 Key Findings
-- **Champions** and **Loyal** customers represent the **core revenue drivers**.  
-- **At Risk** and **Hibernating** groups show long purchase gaps — potential targets for **re-engagement campaigns**.  
-- Spending patterns confirm strong positive correlation between **frequency and monetary value**.  
-- The RFM model effectively distinguishes between **active** and **inactive** customers.  
+- **Champions** and **Loyal** customers are the top spenders (highest Monetary) and key revenue drivers, though they’re a smaller share (≈19.3% and 20.3%).
+- **At Risk** is the largest and least recent segment (≈30.7%, Recency ≈274 days) with low spend—prime win-back target.  
+- Promising is also large (≈29.7%) and recent (Recency ≈92 days), but low spend—nurture toward second purchase..  
+- Hibernating has 0% in this dataset.
+- Frequency shows almost no variation (≈1.0 across personas), so there’s no meaningful correlation between Frequency and Monetary; segmentation is driven mainly by Recency and Monetary.
+- The RFM + K-Means pipeline clearly distinguishes active/high-value vs lapsed/low-value customers, as seen in the persona means and EDA charts.
 
+  
 ---
 
 ### 📸 Example Visuals
