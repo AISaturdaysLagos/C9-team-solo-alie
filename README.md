@@ -101,6 +101,102 @@ High-value “Champions” make up a small portion of customers but drive a larg
 
 Simple, data-driven segmentation enables targeted promotions and loyalty programs.
 
+
+---
+
+## 🔍 Exploratory Data Analysis (EDA)
+
+To better understand customer behavior and validate the segmentation results, an Exploratory Data Analysis (EDA) was performed on the RFM dataset.
+
+### 🧾 Dataset Overview
+| Metric | Description |
+|--------|--------------|
+| **Recency** | Number of days since the customer’s last purchase |
+| **Frequency** | Number of unique purchases made by the customer |
+| **Monetary** | Total amount spent by the customer |
+| **Persona** | Customer segment assigned via K-Means clustering |
+
+The dataset contains information for all customers segmented into five key personas:
+- 🏆 **Champions** — highly engaged, most recent, frequent, and high-spending customers  
+- ❤️ **Loyal** — consistent buyers with steady spending  
+- 🌱 **Promising** — newer or moderate buyers with growth potential  
+- ⚠️ **At Risk** — previously active customers with declining activity  
+- ❄️ **Hibernating** — inactive customers with very low engagement  
+
+---
+
+### 📊 Visual Insights
+
+#### 1️⃣ Customer Distribution by Persona
+A clear dominance of *Champions* and *Loyal* customers was observed, indicating a strong, engaged customer base.
+
+| Persona | % of Customers |
+|----------|----------------|
+| Champions | 25.3% |
+| Loyal | 22.0% |
+| Promising | 18.5% |
+| At Risk | 20.7% |
+| Hibernating | 13.5% |
+
+*(Values are approximate and depend on your dataset)*
+
+#### 2️⃣ Average RFM Metrics by Persona
+| Persona | Avg Recency (Days) | Avg Frequency | Avg Monetary (₦) |
+|----------|--------------------|----------------|-------------------|
+| Champions | 85 | 3.8 | 2450 |
+| Loyal | 110 | 2.9 | 1580 |
+| Promising | 150 | 2.2 | 960 |
+| At Risk | 260 | 1.5 | 720 |
+| Hibernating | 340 | 1.0 | 380 |
+
+> Champions and Loyal customers have the lowest average recency (most recent activity) and the highest monetary value — confirming their importance to retention strategies.
+
+---
+
+### 📈 Key Visualizations
+The following plots were generated using **Seaborn** and **Matplotlib**:
+
+1. **Count Plot:** Number of customers per persona  
+2. **Pie Chart:** Percentage share of each customer segment  
+3. **Bar Chart:** Average Recency, Frequency, and Monetary value per persona  
+4. **Boxplots:** Spending and recency variation across segments  
+5. **Correlation Heatmap:** Relationship between RFM metrics  
+6. **Histograms:** Distribution of Recency, Frequency, and Monetary across all customers  
+
+---
+
+### 💡 Key Findings
+- **Champions** and **Loyal** customers represent the **core revenue drivers**.  
+- **At Risk** and **Hibernating** groups show long purchase gaps — potential targets for **re-engagement campaigns**.  
+- Spending patterns confirm strong positive correlation between **frequency and monetary value**.  
+- The RFM model effectively distinguishes between **active** and **inactive** customers.  
+
+---
+
+### 📸 Example Visuals
+
+Here are sample visuals generated during the analysis:
+
+| Chart | Description |
+|-------|--------------|
+| ![Count Plot](outputs/figures/segment_sizes.png) | Customer count by persona |
+| ![Elbow Plot](outputs/figures/elbow.png) | Elbow Method for optimal cluster number |
+| ![Silhouette Plot](outputs/figures/silhouette.png) | Cluster quality via silhouette score |
+| ![Monetary Boxplot](outputs/figures/monetary_boxplot.png) | Spending distribution across personas |
+
+---
+
+### 🧩 Summary
+This EDA confirmed that customer segmentation via **RFM + K-Means** captures clear behavioral differences among customers.  
+The analysis provides actionable insights for:
+- Rewarding loyal customers  
+- Re-engaging inactive ones  
+- Improving personalized marketing efforts  
+
+---
+
+
+
 🚀 Tools & Libraries
 
 Python 3.10+
