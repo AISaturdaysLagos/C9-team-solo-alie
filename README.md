@@ -136,7 +136,7 @@ A clear dominance of *Champions* and *Loyal* customers was observed, indicating 
 | Loyal | 20.3% |
 | Promising | 29.7% |
 | At Risk | 30.7% |
-| Hibernating | 9.5% |
+| Hibernating | 1.5% |
 
 
 
