@@ -133,10 +133,10 @@ A clear dominance of *Champions* and *Loyal* customers was observed, indicating 
 | Persona | % of Customers |
 |----------|----------------|
 | Champions | 19.3% |
-| Loyal | 20.3% |
-| Promising | 29.7% |
+| Loyal | 20.0% |
+| Promising | 29.5% |
 | At Risk | 30.7% |
-| Hibernating | 1.5% |
+| Hibernating | 0.5% |
 
 
 
