@@ -138,7 +138,7 @@ A clear dominance of *Champions* and *Loyal* customers was observed, indicating 
 | At Risk | 20.7% |
 | Hibernating | 13.5% |
 
-*(Values are approximate and depend on your dataset)*
+
 
 #### 2️⃣ Average RFM Metrics by Persona
 | Persona | Avg Recency (Days) | Avg Frequency | Avg Monetary (₦) |
